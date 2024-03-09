@@ -1,0 +1,14 @@
+<div class="wrapper column gap-1">
+  <img src="{{product.imageUrl}}" alt="Product Thumbnail" class="img">
+  <h2 class="title">{{product.title}}</h2>
+
+  <div class="row gap-0-5">
+    <span class="price-label">Price :</span>
+    <span class="price">{{product.price | currency :'INR'}}</span>
+  </div>
+
+  <p-rating
+    [(ngModel)]="product.rating"
+    [readonly]="true"
+  iconCancelClass="hidden"></p-rating>
+</div>
